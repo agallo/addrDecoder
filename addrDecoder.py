@@ -38,22 +38,22 @@ def sequence(repeat):
         for pos in range(0, 8):
             if 1 & pos != 0:
                 wiringpi.digitalWrite(A0, HIGH)
-                print "Address: " + int(1 & pos)
+                print "Address: " + str(1 & pos)
             else:
                 wiringpi.digitalWrite(A0, LOW)
-                print "Address: " + int(1 & pos)
+                print "Address: " + str(1 & pos)
         if 2 & pos != 0:
             wiringpi.digitalWrite(A1, HIGH)
-            print "Address: " + int(1 & pos)
+            print "Address: " + str(1 & pos)
         else:
             wiringpi.digitalWrite(A1, LOW)
-            print "Address: " + int(1 & pos)
+            print "Address: " + str(1 & pos)
         if 4 & pos != 0:
             wiringpi.digitalWrite(A2, HIGH)
-            print "Address: " + int(1 & pos)
+            print "Address: " + str(1 & pos)
         else:
             wiringpi.digitalWrite(A2, LOW)
-            print "Address: " + int(1 & pos)
+            print "Address: " + str(1 & pos)
     count += 1
 
 
