@@ -38,7 +38,7 @@ def sequence(repeat):
         for pos in range(0, 8):
             if 1 & pos != 0:
                 wiringpi.digitalWrite(A0, HIGH)
-                print "Address A0:" + str(1 & pos)
+                print "Address A0: " + str(1 & pos)
             else:
                 wiringpi.digitalWrite(A0, LOW)
                 print "Address A0: " + str(1 & pos)
@@ -54,8 +54,8 @@ def sequence(repeat):
         else:
             wiringpi.digitalWrite(A2, LOW)
             print "Address A2: " + str(1 & pos)
-    print
-    sleep(1)
+        print
+        sleep(1)
     count += 1
 
 
