@@ -55,7 +55,7 @@ def sequence(repeat):
                 wiringpi.digitalWrite(A2, LOW)
                 print "Address A2: " + str(1 & pos)
             print
-            sleep(1)
+            sleep(3)
     count += 1
 
 
