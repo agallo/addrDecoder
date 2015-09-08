@@ -35,7 +35,7 @@ def setup():
 def sequence(repeat):
     count = 0
     while count <= repeat:
-        for pos in range(0, 8):
+        for pos in range(0, 4):
             print "Position (Address): " + str(pos)
             if 1 & pos != 0:
                 wiringpi.digitalWrite(A0, HIGH)
@@ -56,7 +56,7 @@ def sequence(repeat):
                 wiringpi.digitalWrite(A2, LOW)
                 print "     Address A2: " + str(4 & pos)
             print "*****************"
-            sleep(.05)
+            sleep(1)
     count += 1
 
 
