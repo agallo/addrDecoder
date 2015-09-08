@@ -45,17 +45,17 @@ def sequence(repeat):
                 print "     Address A0: " + str(1 & pos)
             if 2 & pos != 0:
                 wiringpi.digitalWrite(A1, HIGH)
-                print "     Address A1: " + str(1 & pos)
+                print "     Address A1: " + str(2 & pos)
             else:
                 wiringpi.digitalWrite(A1, LOW)
-                print "     Address A1: " + str(1 & pos)
+                print "     Address A1: " + str(2 & pos)
             if 4 & pos != 0:
                 wiringpi.digitalWrite(A2, HIGH)
-                print "     Address A2: " + str(1 & pos)
+                print "     Address A2: " + str(4 & pos)
             else:
                 wiringpi.digitalWrite(A2, LOW)
-                print "     Address A2: " + str(1 & pos)
-            print
+                print "     Address A2: " + str(4 & pos)
+            print "*****************"
             sleep(5)
     count += 1
 
