@@ -52,7 +52,7 @@ def sequence(repeat):
                 wiringpi.digitalWrite(A2, LOW)
                 print "     A2 Active : " + str(4 & pos)
             print "*****************"
-            sleep(.5)
+            sleep(1)
         count += 1
 
 
