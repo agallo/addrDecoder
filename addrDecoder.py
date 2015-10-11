@@ -30,7 +30,7 @@ def setup():
 def sequence(repeat):
     count = 0
     while count <= repeat:
-        for pos in range(0, 7):
+        for pos in range(0, 8):
             print "Decimal Position (Selected Chip): " + str(pos) + "Binary address " + str(bin(pos))
             if 1 & pos != 0:
                 wiringpi.digitalWrite(A0, HIGH)
