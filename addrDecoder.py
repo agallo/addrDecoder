@@ -32,7 +32,7 @@ def sequence(repeat):
     while count <= repeat:
         for pos in range(0, 8):
             print "Decimal Position (Selected Chip): " + str(pos)
-            print "Binary address " + str(bin(pos))
+            print "Binary address: " + str(bin(pos))
             if 1 & pos != 0:
                 wiringpi.digitalWrite(A0, HIGH)
                 print "     A0 Active : " + str(1 & pos)
@@ -52,7 +52,7 @@ def sequence(repeat):
                 wiringpi.digitalWrite(A2, LOW)
                 print "     A2 Active : " + str(4 & pos)
             print "*****************"
-            sleep(1)
+            sleep(.5)
     count += 1
 
 
@@ -69,7 +69,7 @@ def main():
     setup()
     AllOff()
     #   AllBlink(5)
-    sequence(10)
+    sequence(2)
     cleanup()
 
 
