@@ -53,7 +53,7 @@ def sequence(repeat):
                 print "     A2 Active : " + str(4 & pos)
             print "*****************"
             sleep(.5)
-    count += 1
+        count += 1
 
 
 def AllOff():
