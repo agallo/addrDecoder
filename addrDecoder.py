@@ -7,10 +7,10 @@ import wiringpi2 as wiringpi
 
 
 # define some pins:
-
-A0 = 11
-A1 = 13
-A2 = 15
+# addrDecoder   PhyPin (B+)     T-Cobbler Plus  Breadboard
+A0 = 11                         # GPIO17        A6
+A1 = 13                         # GPIO27        A7
+A2 = 15                         # GPIO22        A8
 
 pins = [A0, A1, A2]
 
@@ -25,11 +25,6 @@ def setup():
     wiringpi.wiringPiSetupPhys()
     for pin in pins:
         wiringpi.pinMode(pin, OUTPUT)
-
-
-# wiringpi.pinMode(A0, OUTPUT)
-#    wiringpi.pinMode(A1, OUTPUT)
-#    wiringpi.pinMode(A2, OUTPUT)
 
 
 def sequence(repeat):
