@@ -31,25 +31,25 @@ def sequence(repeat):
     count = 0
     while count <= repeat:
         for pos in range(0, 7):
-            print "Decimal Position (Address): " + str(pos)
+            print "Decimal Position (Selected Chip): " + str(pos) + "Binary address " + str(bin(pos))
             if 1 & pos != 0:
                 wiringpi.digitalWrite(A0, HIGH)
-                print "     Address A0: " + str(bin(pos))
+                print "     A0 Active : " + str(1 & pos)
             else:
                 wiringpi.digitalWrite(A0, LOW)
-                print "     Address A0: " + str(bin(pos))
+                print "     A0 Active : " + str(1 & pos)
             if 2 & pos != 0:
                 wiringpi.digitalWrite(A1, HIGH)
-                print "     Address A1: " + str(bin(pos))
+                print "     A1 Active : " + str(2 & pos)
             else:
                 wiringpi.digitalWrite(A1, LOW)
-                print "     Address A1: " + str(bin(pos))
+                print "     A1 Active : " + str(2 & pos)
             if 4 & pos != 0:
                 wiringpi.digitalWrite(A2, HIGH)
-                print "     Address A2: " + str(bin(pos))
+                print "     A2 Active : " + str(4 & pos)
             else:
                 wiringpi.digitalWrite(A2, LOW)
-                print "     Address A2: " + str(bin(pos))
+                print "     A2 Active : " + str(4 & pos)
             print "*****************"
             sleep(1)
     count += 1
