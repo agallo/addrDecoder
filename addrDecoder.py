@@ -69,7 +69,7 @@ def main():
     setup()
     AllOff()
     #   AllBlink(5)
-    sequence(2)
+    sequence(5)
     cleanup()
 
 
