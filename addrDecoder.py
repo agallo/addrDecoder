@@ -43,7 +43,7 @@ def sequence(repeat):
                 print "     Address A1: " + str(bin(pos))
             else:
                 wiringpi.digitalWrite(A1, LOW)
-                print "     Address A1: " + str(bin(pos)))
+                print "     Address A1: " + str(bin(pos))
             if 4 & pos != 0:
                 wiringpi.digitalWrite(A2, HIGH)
                 print "     Address A2: " + str(bin(pos))
