@@ -30,7 +30,7 @@ def setup():
 def sequence(repeat):
     count = 0
     while count <= repeat:
-        for pos in range(0, 4):
+        for pos in range(0, 7):
             print "Position (Address): " + str(pos)
             if 1 & pos != 0:
                 wiringpi.digitalWrite(A0, HIGH)
