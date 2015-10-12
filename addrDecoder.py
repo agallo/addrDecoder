@@ -32,6 +32,11 @@ def sequence(repeat):
     while count <= repeat:
         for pos in range(0, 8):
             print "Decimal Position (Selected Chip): " + str(pos)
+            # this print statement prints the binary pattern (or High-Low) pattern
+            # sent to the address decoders input pins (A0 - A2)
+            # it converts the int var 'pos' to a binary, strips off the two leading
+            # characters ([2:]) (which are always 0b to signify a binary value)
+            # and then left pads the resulting value with zeros to make a 3-digit binary
             print "Binary address: " + str(bin(pos)[2:].zfill(3))
             if 1 & pos != 0:
                 wiringpi.digitalWrite(A0, HIGH)
