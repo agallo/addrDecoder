@@ -7,7 +7,7 @@ import wiringpi2 as wiringpi
 
 
 # define some pins:
-# addrDecoder   PhyPin (B+)     T-Cobbler Plus  Breadboard
+# variable = PhyPin (B+)        T-Cobbler Plus  Breadboard
 A0 = 11                         # GPIO17        A6
 A1 = 13                         # GPIO27        A7
 A2 = 15                         # GPIO22        A8
@@ -35,22 +35,22 @@ def sequence(repeat):
             print "Binary address: " + str(bin(pos)[2:].zfill(3))
             if 1 & pos != 0:
                 wiringpi.digitalWrite(A0, HIGH)
-                print "     A0 Active : " + str(1 & pos)
+                 print "     A0 Active : 1 True"
             else:
                 wiringpi.digitalWrite(A0, LOW)
-                print "     A0 Active : " + str(1 & pos)
+                 print "     A0 Active : 0 False"
             if 2 & pos != 0:
                 wiringpi.digitalWrite(A1, HIGH)
-                print "     A1 Active : " + str(2 & pos)
+                 print "     A1 Active : 1 True"
             else:
                 wiringpi.digitalWrite(A1, LOW)
-                print "     A1 Active : " + str(2 & pos)
+                 print "     A1 Active : 0 False"
             if 4 & pos != 0:
                 wiringpi.digitalWrite(A2, HIGH)
-                print "     A2 Active : " + str(4 & pos)
+                 print "     A2 Active : 1 True"
             else:
                 wiringpi.digitalWrite(A2, LOW)
-                print "     A2 Active : " + str(4 & pos)
+                 print "     A2 Active : 0 False"
             print "*****************"
             sleep(.5)
         count += 1
