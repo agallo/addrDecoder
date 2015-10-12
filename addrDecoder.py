@@ -57,6 +57,10 @@ def sequence(repeat):
 
 
 def AllOff():
+    # this sets all address decoder address input pins to low
+    # this does not, however, cause all address decorder output pins
+    # to go low.  To set all output pins (Y0 - Y7) to low,
+    # you need to set E1-E2-E3 is a state OTHER than Low-Low-High
     for p in pins:
         wiringpi.digitalWrite(p, LOW)
 
