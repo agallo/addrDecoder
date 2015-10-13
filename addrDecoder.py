@@ -7,10 +7,10 @@ import wiringpi2 as wiringpi
 
 
 # define some pins:
-# variable = PhyPin (B+)        T-Cobbler Plus  Breadboard
-A0 = 11                         # GPIO17        A6
-A1 = 13                         # GPIO27        A7
-A2 = 15                         # GPIO22        A8
+# var = PhyPin(B+)        T-Cobbler Plus  Breadboard
+A0 = 11                   # GPIO17        A6
+A1 = 13                   # GPIO27        A7
+A2 = 15                   # GPIO22        A8
 
 pins = [A0, A1, A2]
 
